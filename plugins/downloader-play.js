@@ -11,7 +11,7 @@ let { title, description, thumbnail, videoId, durationH, viewH, publishedTime } 
 const url = 'https://www.youtube.com/watch?v=' + videoId
  
 await conn.sendButton(m.chat, wm, `
-╔═══════❰  *🔰*  ❱══════⬣
+╔═══════❰  *💿*  ❱══════⬣
 ║ 𝑻𝑰𝑻𝑼𝑳𝑶 | 𝑻𝑰𝑻𝑳𝑬
 ║ ${title}
 ║┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
@@ -29,10 +29,10 @@ await conn.sendButton(m.chat, wm, `
 ║┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ║ 𝑼𝑹𝑳
 ║ ${url}
-╚═══════❰ *${vs}* ❱══════⬣`, thumbnail, [['𝐌 𝐄 𝐍 𝐔 ☘️', '/menu']], m)
+╚═══════❰ *${vs}* ❱══════⬣`, thumbnail, [['𝐌 𝐄 𝐍 𝐔 📒', '/menu']], m)
   
 const sections = [{
-title: comienzo + ' 📡 𝐓𝐈𝐏𝐎𝐒 𝐃𝐄 𝐃𝐄𝐒𝐂𝐀𝐑𝐆𝐀𝐒 ' + fin,
+title: comienzo + ' 🖥 𝐓𝐈𝐏𝐎𝐒 𝐃𝐄 𝐃𝐄𝐒𝐂𝐀𝐑𝐆𝐀𝐒 ' + fin,
 rows: [
 {title: "𝐀𝐔𝐃𝐈𝐎 (Opcion 1)", rowId: `${usedPrefix}yta ${url}`, description: `${title}\n`},
 {title: "𝐀𝐔𝐃𝐈𝐎 (Opcion 2)", rowId: `${usedPrefix}play.1 ${url}`, description: `${title}\n`},
@@ -50,7 +50,7 @@ const listMessage = {
   text: `*𝐄𝐋𝐈𝐉𝐀 𝐐𝐔𝐄 𝐕𝐀 𝐇𝐀𝐂𝐄𝐑 𝐂𝐎𝐍  ${text}*`,
   footer: global.wm,
   title: `${htki} *♻️ 𝐃𝐄𝐒𝐂𝐀𝐑𝐆𝐀𝐒* ${htka}`,
-  buttonText: `🍄 𝐄𝐋𝐄𝐆𝐈𝐑 🍁`,
+  buttonText: `👉 𝐄𝐋𝐄𝐆𝐈𝐑 💾`,
   sections
 }
 
