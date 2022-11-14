@@ -895,14 +895,14 @@ export async function handler(chatUpdate) {
                 if (!('autosticker' in chat)) chat.autosticker = false                      
                 if (!('audios' in chat)) chat.audios = false                     
 		if (!('antiver' in chat)) chat.antiver = true                    
-                if (!('antiLink' in chat)) chat.antiLink = false                    
+                if (!('antiLink' in chat)) chat.antiLink = true                     
                 if (!('antiTiktok' in chat)) chat.antiTiktok = false
 		if (!('antiYoutube' in chat)) chat.antiYoutube = false
 		if (!('antiTelegram' in chat)) chat.antiTelegram = false
 		if (!('antiFacebook' in chat)) chat.antiFacebook = false
 		if (!('antiInstagram' in chat)) chat.antiInstagram = false
 		if (!('antiTwitter' in chat)) chat.antiInstagram = false
-		if (!('antifake' in chat)) chat.antifake = false
+		if (!('antifake' in chat)) chat.antifake = true
                 if (!('antiLink2' in chat)) chat.antiLink2 = false
 		if (!('reaction' in chat)) chat.reaction = true    
                 if (!('viewonce' in chat)) chat.viewonce = false                                 
@@ -924,9 +924,9 @@ export async function handler(chatUpdate) {
                     modohorny: true,
                     stickers: true,
                     autosticker: false,
-                    audios: true,
+                    audios: false,
 		    antiver: true,
-                    antiLink: false,
+                    antiLink: true,
                     antiLink2: false,
                     antiTiktok: false,
 		    antiYoutube: false,
@@ -934,7 +934,7 @@ export async function handler(chatUpdate) {
 		    antiFacebook: false,
 		    antiInstagram: false,
 		    antiTwitter: false,
-		    antifake: false,
+		    antifake: true,
                     antiTraba: false,
 		    reaction: true,
                     antiArab: false,
@@ -1321,7 +1321,7 @@ export async function participantsUpdate({ id, participants, action }) {
                         text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || '*𝙂𝙧𝙪𝙥𝙤 𝙂𝙚𝙣𝙞𝙖𝙡 | 𝘾𝙤𝙤𝙡 𝙂𝙧𝙤𝙪𝙥 😼*') :
                             (chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace('@user', await this.getName(user)) //.replace('@user', '@' + user.split('@')[0])
                             let apii = await this.getFile(pp)
-                            this.sendHydrated(id, text, groupMetadata.subject, apii.data, 'https://github.com/DIEGO-OFC/DORRAT-BOT-MD', '𝐃𝐎𝐑𝐑𝐀𝐓-𝐁𝐎𝐓-𝐌𝐃', null, null, [
+                            this.sendHydrated(id, text, groupMetadata.subject, apii.data, 'https://github.com/DIEGO-OFC/DORRAT-BOT-MD', '𝘼𝙪𝙩𝙤𝙢𝙖𝙩𝙞𝙘 𝙗𝙤𝙩 𝙧𝙚𝙢𝙤𝙫𝙚𝙧', null, null, [
                             [(action == 'add' ? '𝐒𝐄 𝐔𝐍𝐈𝐎 🌠 | 𝐇𝐈!!' : '𝐒𝐄 𝐅𝐔𝐄  |  𝐏𝐎𝐑 𝐏𝐎𝐑 𝐏𝐀𝐍 '), '.s'],    
                             ['⫹⫺ 𝐌𝐄𝐍𝐔', '/menu']
                             ], '', { mentions: [user]})
