@@ -17,7 +17,7 @@ m.reply(`💥 Anti fakes está activo para evitar spam\n\nHasta la próxima`)
 await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')} 
 
 if (m.sender.startsWith('234' || '234')) {
-global.db.data.users[m.sender].banned = true
+global.db.data.users[m.sender].banned = false
 m.reply(`💥 Anti fakes está activo para evitar spam\n\nHasta la próxima`)
 await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')} 	
 
